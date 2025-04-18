@@ -1,0 +1,238 @@
+/* Custom styles to complement Tailwind */
+@layer base {
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+html {
+    margin: 0;
+    padding: 0;
+   
+  }
+
+/* Custom gradient backgrounds */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+
+/* Input focus styles */
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.3);
+}
+
+/* Custom animations */
+.transition-transform {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.hover-lift {
+    transition: transform 0.2s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+}
+
+/* Mobile menu animation */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-down {
+    animation: slideDown 0.3s ease-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1b2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4c4f66;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6366f1;
+}
+
+/* Swiper styles */
+.swiper {
+    padding-bottom: 50px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: 40px !important;
+    height: 40px !important;
+    /* background: rgba(99, 102, 241, 0.8); */
+    border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(99, 102, 241, 1);
+}
+
+.swiper-pagination-bullet {
+    background: #4c4f66 !important;
+    opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #6366f1 !important;
+    opacity: 1 !important;
+}
+
+/* Project card styles */
+.project-card img {
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Button hover animation */
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover::after {
+    transform: translateX(0);
+}
+
+/* Base styles */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-right {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.6s ease-out;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+/* Active states when element is visible */
+.fade-up.active,
+.fade-left.active,
+.fade-right.active,
+.fade-in.active {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* Delay utilities */
+.delay-200 {
+    transition-delay: 200ms;
+}
+
+.delay-400 {
+    transition-delay: 400ms;
+}
+
+.delay-600 {
+    transition-delay: 600ms;
+} 
+.min-h-img{
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.preloader {
+    background-color: #111;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .logo span {
+    font-size: 4rem;
+    font-weight: 600;
+    color: transparent;
+    -webkit-text-stroke: 1px #888;
+    position: relative;
+    margin: 0 1px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .logo span::before {
+    content: attr(data-letter);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #7C3AED; /* Replace with your primary color */
+    width: 0;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill 1s forwards infinite alternate;
+  }
+
+  .logo span:nth-child(1)::before { animation-delay: 0s; }
+  .logo span:nth-child(2)::before { animation-delay: 0.1s; }
+  .logo span:nth-child(3)::before { animation-delay: 0.2s; }
+  .logo span:nth-child(4)::before { animation-delay: 0.3s; }
+  .logo span:nth-child(5)::before { animation-delay: 0.4s; }
+  .logo span:nth-child(6)::before { animation-delay: 0.5s; }
+  .logo span:nth-child(7)::before { animation-delay: 0.6s; }
+  .logo span:nth-child(8)::before { animation-delay: 0.7s; }
+
+  @keyframes fill {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }

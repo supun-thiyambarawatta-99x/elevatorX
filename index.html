@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElevateX - Smart Elevator Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#0A0B1E] text-white font-inter">
+    <!-- <div class="preloader">
+        <div class="logo">
+          <span data-letter="E">E</span>
+          <span data-letter="l">l</span>
+          <span data-letter="e">e</span>
+          <span data-letter="v">v</span>
+          <span data-letter="a">a</span>
+          <span data-letter="t">t</span>
+          <span data-letter="e">e</span>
+          <span data-letter="X">X</span>
+        </div>
+      </div> -->
+    <nav class="fixed w-full z-50 bg-[#0A0B1E]/95 backdrop-blur-sm transition-colors duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold">ElevateX</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-purple-500 transition-colors duration-200">Home</a>
+                    <a href="#about" class="hover:text-purple-500 transition-colors duration-200">About</a>
+                    <a href="#projects" class="hover:text-purple-500 transition-colors duration-200">Projects</a>
+                    <a href="#services" class="hover:text-purple-500 transition-colors duration-200">Services</a>
+                    <a href="#contact" class="hover:text-purple-500 transition-colors duration-200">Contact</a>
+                </div>
+                <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition-colors duration-200">Get Started</button>
+            </div>
+        </div>
+    </nav> 
+
+    <section id="home" class="min-h-screen flex items-center relative overflow-hidden">
+        <div class="container mx-auto px-6 py-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-left">
+                    <span class="text-purple-500 font-semibold mb-4 block">Welcome to ElevateX</span>
+                    <h1 class="text-5xl font-bold mb-6">Elevate Your Space with Precision</h1>
+                    <p class="text-gray-400 mb-8">Experience the next generation of vertical transportation with our smart elevator solutions, meticulously engineered for modern residential and commercial buildings.</p>
+                    <div class="flex space-x-4">
+                        <button class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700">Get Consultation</button>
+                        <button class="border border-white px-8 py-3 rounded-lg hover:bg-white/10">View Projects</button>
+                    </div>
+                </div>
+                <div class="relative fade-right">
+                    <img src="./images/hero-image.jpg" alt="Modern Elevator" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section> 
+   
+    <section id="about" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <span class="text-purple-500 font-semibold mb-4 block">About Us</span>
+                <h2 class="text-4xl font-bold mb-4">Innovation in Motion</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Discover how we're revolutionizing vertical transportation with cutting-edge technology and unparalleled service quality.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-left">
+                    <img src="./images/about-us.jpg" alt="Innovation" class="rounded-lg shadow-2xl">
+                </div>
+                <div class="fade-right">
+                    <h3 class="text-2xl font-bold mb-6">Our Journey Since 2015</h3>
+                    <p class="text-gray-400 mb-8">Since 2015, we’ve been at the forefront of revolutionizing vertical transportation by integrating cutting-edge elevator technologies with a deep commitment to service excellence. </p>
+                    <p class="text-gray-400 mb-8">From custom installations in luxury high-rises to robust systems for commercial towers, our solutions are designed to enhance mobility, safety, and user experience. With a team of certified engineers, a strong focus on innovation, and a 24/7 maintenance network, we ensure that every ride is smooth, secure, and reliable.</p>
+                    <p class="text-gray-400 mb-8">Our systems leverage IoT-powered diagnostics and real-time monitoring to reduce downtime and optimize performance. We are equally committed to sustainability, offering energy-efficient models that meet global green building standards. With a growing footprint across the region, we continue to set new benchmarks in elevator design, technology, and customer satisfaction.</p>
+                    <div class="grid grid-cols-3 gap-8">
+                        <div class="fade-up delay-200">
+                            <h3 class="text-3xl font-bold mb-2 stats-number" data-target="500">500+</h3>
+                            <p class="text-gray-400">Projects Completed</p>
+                        </div>
+                        <div class="fade-up delay-400">
+                            <h3 class="text-3xl font-bold mb-2 stats-number" data-target="15">15+</h3>
+                            <p class="text-gray-400">Years Experience</p>
+                        </div>
+                        <div class="fade-up delay-600">
+                            <h3 class="text-3xl font-bold mb-2 stats-number" data-target="99">99.9%</h3>
+                            <p class="text-gray-400">Uptime Guaranteed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section id="projects" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <span class="text-purple-500 font-semibold mb-4 block">Our Portfolio</span>
+                <h2 class="text-4xl font-bold mb-4">Featured Projects</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Explore our showcase of successful installations across prestigious buildings worldwide.</p>
+            </div>
+            <div class="swiper projectsSwiper fade-up delay-200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="group relative overflow-hidden rounded-lg">
+                            <img src="./images/project-01.jpg" alt="Azure Tower" class="w-full transition-transform duration-300 group-hover:scale-110 min-h-img">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80">
+                                <h3 class="text-xl font-bold">Azure Tower</h3>
+                                <p class="text-gray-300">New York, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group relative overflow-hidden rounded-lg"> 
+                            <img src="./images/project-02.jpg" alt="Crystal Heights" class="w-full transition-transform duration-300 group-hover:scale-110 min-h-img">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80">
+                                <h3 class="text-xl font-bold">Crystal Heights</h3>
+                                <p class="text-gray-300">Dubai, UAE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group relative overflow-hidden rounded-lg">
+                            <img src="./images/project-03.jpg" alt="The Pinnacle" class="w-full transition-transform duration-300 group-hover:scale-110 min-h-img">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80">
+                                <h3 class="text-xl font-bold">The Pinnacle</h3>
+                                <p class="text-gray-300">Singapore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group relative overflow-hidden rounded-lg">
+                            <img src="./images/project-01.jpg" alt="Sky Garden" class="w-full transition-transform duration-300 group-hover:scale-110 min-h-img">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80">
+                                <h3 class="text-xl font-bold">Sky Garden</h3>
+                                <p class="text-gray-300">London, UK</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="group relative overflow-hidden rounded-lg">
+                            <img src="./images/project-02.jpg" alt="Ocean View" class="w-full transition-transform duration-300 group-hover:scale-110 min-h-img">
+                            <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80">
+                                <h3 class="text-xl font-bold">Ocean View</h3>
+                                <p class="text-gray-300">Miami, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination !bottom-[-30px]"></div>
+                <div class="swiper-button-prev !text-white !left-[-10px]"></div>
+                <div class="swiper-button-next !text-white !right-[-10px]"></div>
+            </div>
+        </div>
+    </section> 
+
+    <section id="services" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <span class="text-purple-500 font-semibold mb-4 block">What We Offer</span>
+                <h2 class="text-4xl font-bold mb-4">Our Services</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Comprehensive elevator solutions tailored to meet your building's unique requirements.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-[#1A1B2E] rounded-lg overflow-hidden group fade-up delay-200">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/service-01.jpg" alt="Installation Services" class="w-full transition-transform group-hover:scale-110 min-h-img">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80">
+                            <h3 class="text-xl font-bold">Installation</h3>
+                            <p class="text-gray-300">New Elevator Systems</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400">Expert installation of state-of-the-art elevator systems for residential and commercial buildings. We ensure precision, safety, and efficiency in every installation.</p>
+                        <ul class="mt-4 space-y-2 text-gray-400">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Custom Design Solutions
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Smart Technology Integration
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Safety Certification
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="bg-[#1A1B2E] rounded-lg overflow-hidden group fade-up delay-400">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/service-02.jpg" alt="Maintenance Services" class="w-full transition-transform group-hover:scale-110 min-h-img">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80">
+                            <h3 class="text-xl font-bold">Maintenance</h3>
+                            <p class="text-gray-300">Preventive Care</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400">Comprehensive maintenance programs to ensure your elevator systems operate at peak performance. Regular inspections and timely repairs for optimal functionality.</p>
+                        <ul class="mt-4 space-y-2 text-gray-400">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                24/7 Emergency Support
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Preventive Maintenance
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Performance Monitoring
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="bg-[#1A1B2E] rounded-lg overflow-hidden group fade-up delay-600">
+                    <div class="relative overflow-hidden">
+                        <img src="./images/service-03.jpg" alt="Modernization Services" class="w-full transition-transform group-hover:scale-110 min-h-img">
+                        <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80">
+                            <h3 class="text-xl font-bold">Modernization</h3>
+                            <p class="text-gray-300">System Upgrades</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-400">Transform your existing elevator systems with modern technology and enhanced features. Improve efficiency, safety, and user experience with our modernization solutions.</p>
+                        <ul class="mt-4 space-y-2 text-gray-400">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Energy Efficiency
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Digital Integration
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 mr-2 text-purple-500" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                                </svg>
+                                Aesthetic Updates
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <span class="text-purple-500 font-semibold mb-4 block">Contact Us</span>
+                <h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Have a question or ready to elevate your building? We're here to help you every step of the way.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-[#1A1B2E] p-8 rounded-lg fade-left">
+                    <form id="contactForm">
+                        <div class="mb-6">
+                            <input type="text" placeholder="Your Name" class="w-full bg-[#0A0B1E] p-4 rounded-lg">
+                        </div>
+                        <div class="mb-6">
+                            <input type="email" placeholder="Your Email" class="w-full bg-[#0A0B1E] p-4 rounded-lg">
+                        </div>
+                        <div class="mb-6">
+                            <textarea placeholder="Your Message" rows="4" class="w-full bg-[#0A0B1E] p-4 rounded-lg"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 text-white py-4 rounded-lg hover:bg-purple-700">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="fade-right">
+                    <div class="bg-[#1A1B2E] p-8 rounded-lg mb-8">
+                        <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+                        <p class="text-gray-400 mb-2">123 Business Avenue</p>
+                        <p class="text-gray-400 mb-2">New York, NY 10001</p>
+                        <p class="text-gray-400 mb-2">+1 (555) 123-4567</p>
+                        <p class="text-gray-400">contact@elevatex.com</p>
+                    </div>
+                    <div class="bg-[#1A1B2E] p-8 rounded-lg">
+                        <h3 class="text-xl font-bold mb-4">Business Hours</h3>
+                        <p class="text-gray-400 mb-2">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p class="text-gray-400 mb-2">Saturday: 10:00 AM - 4:00 PM</p>
+                        <p class="text-gray-400">Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <footer class="bg-[#1A1B2E] py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ElevateX</h3>
+                    <p class="text-gray-400">Elevating spaces with innovative vertical transportation solutions.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-white">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white">Services</a></li>
+                        <li><a href="#projects" class="hover:text-white">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#services" class="hover:text-white">Installation</a></li>
+                        <li><a href="#services" class="hover:text-white">Maintenance</a></li>
+                        <li><a href="#services" class="hover:text-white">Modernization</a></li>
+                        <li><a href="#services" class="hover:text-white">24/7 Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 ElevateX. All rights reserved.</p>
+            </div>
+        </div>
+    </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html> 
