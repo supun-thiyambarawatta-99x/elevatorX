@@ -236,3 +236,9 @@ input:focus, textarea:focus {
     0% { width: 0; }
     100% { width: 100%; }
   }
+
+  .bg-neon{
+     /* Neon glow background effect */
+     background: radial-gradient(circle at center, rgba(147, 51, 234, 0.2) 0%, #111 80%);
+     /* box-shadow: 0 0 40px 10px rgba(147, 51, 234, 0.4); */
+  }
